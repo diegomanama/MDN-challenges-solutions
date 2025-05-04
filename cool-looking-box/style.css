@@ -1,0 +1,21 @@
+html {
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+/* Your CSS below here */
+
+div {
+  block-size: 15rem;
+  inline-size: 30rem;
+  border: 1px solid rgb(126, 0, 0);
+  border-radius: 1.5rem;
+  margin-inline: auto;
+  line-height: 15rem;
+  text-align: center;
+  font-size: 1.8rem; /* set root element's font size to 10px to calculate computed value with ease (10px x 1.8 = 18px)*/
+  text-shadow: 3px 3px 3px black;
+  color: white;
+  background: linear-gradient(to right bottom, transparent, rgb(0, 0, 0, 0.15) 30%), red;
+  box-shadow: 3px 3px 6px black, inset 2px 3px 5px white, inset -2px -3px 5px black;
+}

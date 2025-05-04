@@ -1,0 +1,190 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+@font-face {
+  font-family: 'droid_serif';
+  src: url('./fonts/generated-code/droidserif-regular-webfont.woff2') format('woff2'),
+       url('./fonts/generated-code/droidserif-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'droid_serif';
+  src: url('./fonts/generated-code/droidserif-italic-webfont.woff2') format('woff2'),
+       url('./fonts/generated-code/droidserif-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+
+}
+
+@font-face {
+  font-family: 'droid_serif';
+  src: url('./fonts/generated-code/droidserif-bolditalic-webfont.woff2') format('woff2'),
+       url('./fonts/generated-code/droidserif-bolditalic-webfont.woff2') format('woff');
+  font-weight: bold;
+  font-style: italic;
+
+}
+
+@font-face {
+  font-family: 'droid_serif';
+  src: url('./fonts/generated-code/droidserif-bold-webfont.woff2') format('woff2'),
+       url('./fonts/generated-code/droidserif-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'basic';
+  src: url('./fonts/generated-code/basic-regular-webfont.woff2') format('woff2'),
+       url('./fonts/generated-code/basic-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+html {
+  font-family: 'droid_serif';
+  font-size: 10px;
+}
+
+body {
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-family: 'basic';
+  letter-spacing: 3px;
+}
+
+h1 {
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+p, ul, ol {
+  margin-block: 1.6rem;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+}
+
+ul {
+  list-style: square;
+}
+
+ol {
+  list-style: upper-roman;
+}
+
+section h2 + p {
+  text-indent: 2rem;
+}
+
+/* Links */
+
+a:link {
+  color: #a46668;
+}
+
+a[href^="http"]::after {
+  block-size: 1.4rem;
+  inline-size: 2rem;
+  content: "";
+  display: inline-block;
+  background: no-repeat center url(./external-link-52.png);
+  background-size: contain;
+}
+
+a:visited {
+  color: #a46668;
+}
+
+a:focus {
+  color: #a46668;
+  text-decoration: none;
+  outline: transparent;
+}
+
+a:hover {
+  color: #a46668;
+  text-decoration: none;
+}
+
+a:active {
+  color: #5e2c2e;
+  font-weight: bold;
+}
+
+/* Navigation */
+
+nav ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  li {
+    block-size: 6rem;
+    border: 1px solid #a46668;
+    border-radius: 5px;
+    font-size: 2.4rem;
+    line-height: 6rem;
+    text-align: center;
+    display: block;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
